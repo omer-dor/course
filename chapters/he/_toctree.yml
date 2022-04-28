@@ -2,3 +2,26 @@
   sections:
   - local: chapter0/1
     title: מבוא
+- title: 1. מודלי טרנספורמרים
+  sections:
+  - local: chapter1/1
+    title: מבוא
+  - local: chapter1/2
+    title: עיבוד שפה טבעית
+  - local: chapter1/3
+    title: טרסנפורמרים, מה הם מסוגלים לעשות?
+  - local: chapter1/4
+    title: איך טרנספורמרים עובדים?
+  - local: chapter1/5
+    title: מודלי Encoder
+  - local: chapter1/6
+    title: מודלי decoder
+  - local: chapter1/7
+    title: Sequence-to-sequence מודלי
+  - local: chapter1/8
+    title: הטיות ומגבלות
+  - local: chapter1/9
+    title: סיכום
+  - local: chapter1/10
+    title: בוחן סוף הפרק
+    quiz: 1
