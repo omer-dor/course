@@ -1,4 +1,6 @@
-# Transformers, what can they do?
+<span dir="rtl" align="right">
+
+# טרנספורמרים, מה הם מסוגלים לעשות?
 
 <DocNotebookDropdown
   classNames="absolute z-10 right-0 top-0"
@@ -7,24 +9,29 @@
     {label: "Aws Studio", value: "https://studiolab.sagemaker.aws/import/github/huggingface/notebooks/blob/master/course/chapter1/section3.ipynb"},
 ]} />
 
-In this section, we will look at what Transformer models can do and use our first tool from the 🤗 Transformers library: the `pipeline()` function.
+בחלק זה, נביט ביכולות של מודלי טרנספורמרים ונשתמש בכלי הראשון שלנו מספריית הטרנספורמרים של 🤗 : פונקצית ה `()pipeline`.
 
-<Tip>
-👀 See that <em>Open in Colab</em> button on the top right? Click on it to open a Google Colab notebook with all the code samples of this section. This button will be present in any section containing code examples. 
+<Tip align="right">
+<span dir="rtl" align="right">
 
-If you want to run the examples locally, we recommend taking a look at the <a href="/course/chapter0">setup</a>.
+👀 רואים את כפתור ה <em>Open in Colab</em> בפינה למעלה? לחצו עליו כדי לפתוח מחברת Google Colab עם כל דוגמאות הקוד הקוד המופיעות בחלק זה.
+אם תרצו להריץ את קטעי הקוד מקומית, אנחנו ממליצים להעיף מבט על <a href="/course/chapter0">התקנה</a>.
+</span>
 </Tip>
 
-## Transformers are everywhere!
+## טרנספורמרים נמצאים בכל מקום!
 
-Transformer models are used to solve all kinds of NLP tasks, like the ones mentioned in the previous section. Here are some of the companies and organizations using Hugging Face and Transformer models, who also contribute back to the community by sharing their models:
+מודלי טרנספורמר משמשים לפתרון כל מני מטלות NLP, כמו אלו שפורטו בחלק הקודם. הנה מה מהחברות והארגונים שמשתמשים ב Hugging Face ובמודלי טרנספורמר, שגם תורמים חזרה לקהילה בכך שהם משתפים את המודלים שלהם:
 
 <img src="https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/companies.PNG" alt="Companies using Hugging Face" width="100%">
 
-The [🤗 Transformers library](https://github.com/huggingface/transformers) provides the functionality to create and use those shared models. The [Model Hub](https://huggingface.co/models) contains thousands of pretrained models that anyone can download and use. You can also upload your own models to the Hub!
+[ספריית הטרנספורמרים של 🤗](https://github.com/huggingface/transformers) מספקת פונקציונליות ליציה ולשימוש של מודלים משותפים אלה. ה [Model Hub](https://huggingface.co/models) מכיל אלפי מודלים מאומנים שכל אחד יכול להוריד ולהשתמש בהם. אפשר גם להעלות מודלים משלכם ל Hub.
 
 <Tip>
-⚠️ The Hugging Face Hub is not limited to Transformer models. Anyone can share any kind of models or datasets they want! <a href="https://huggingface.co/join">Create a huggingface.co</a> account to benefit from all available features!
+<span dir="rtl" align="right">
+
+⚠️ ה Hugging Face Hub לא מוגבל למודלי טרנספורמרים בלבד. כל אחד יכול לשתף כל סוג של מודל או דאטאסט שהוא רוצה! <a href="https://huggingface.co/join">צור חשבון huggingface.co</a> כדי להנות מכל הפיצ'רים המוצעים!
+</span>
 </Tip>
 
 Before diving into how Transformer models work under the hood, let's look at a few examples of how they can be used to solve some interesting NLP problems.
@@ -327,3 +334,5 @@ Like with text generation and summarization, you can specify a `max_length` or a
 </Tip>
 
 The pipelines shown so far are mostly for demonstrative purposes. They were programmed for specific tasks and cannot perform variations of them. In the next chapter, you'll learn what's inside a `pipeline()` function and how to customize its behavior.
+
+</span>
