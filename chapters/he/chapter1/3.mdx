@@ -34,14 +34,14 @@
 </span>
 </Tip>
 
-Before diving into how Transformer models work under the hood, let's look at a few examples of how they can be used to solve some interesting NLP problems.
+לפני שנצלול לאיך מודלי טרנספורמר עובדים מתחת למכסה המנוע, נסתכל על מספר דוגמאות של איך הם יכולים לשמש אותנו לפתרון כמה בעיות NLP מעניינות.
 
-## Working with pipelines
+## עבודה עם pipelines
 
 <Youtube id="tiZFewofSLM" />
 
-The most basic object in the 🤗 Transformers library is the `pipeline()` function. It connects a model with its necessary preprocessing and postprocessing steps, allowing us to directly input any text and get an intelligible answer:
-
+האובייקט הבסיסי ביותר בספריית הטרנספורמרים של 🤗 הוא פונקצית ה `()pipeline`. היא מחברת מודל עם צעדי ה preprocessing וה postprocessing הנחוצים לו, ומאפשרת לנו להעביר כקלט טקסט ולקבל תשובה מובנת. 
+  
 ```python
 from transformers import pipeline
 
@@ -53,7 +53,7 @@ classifier("I've been waiting for a HuggingFace course my whole life.")
 [{'label': 'POSITIVE', 'score': 0.9598047137260437}]
 ```
 
-We can even pass several sentences!
+אנחנו יכולים אפילו להעביר מספר משפטים!
 
 ```python
 classifier(
@@ -66,16 +66,16 @@ classifier(
  {'label': 'NEGATIVE', 'score': 0.9994558095932007}]
 ```
 
-By default, this pipeline selects a particular pretrained model that has been fine-tuned for sentiment analysis in English. The model is downloaded and cached when you create the `classifier` object. If you rerun the command, the cached model will be used instead and there is no need to download the model again.
+כברירת מחדל, ה pipeline הזה בוחר מודל מאומן מסוים שכבר עבר fine tuning ל sentiment analysis באנגלית. מודל זה מורד ונשמר בעת יצירת אובייקט ה `classifier`. אם נריץ את הפקודה בשנית, לא תבוצע הורדה מחדש של המודל, אלא נשתמש במודל שנשמר כבר. 
 
-There are three main steps involved when you pass some text to a pipeline:
+יש שלושה שלבים עיקריים גשאנחנו מעבירים טקסט ל pipeline:
 
-1. The text is preprocessed into a format the model can understand.
-2. The preprocessed inputs are passed to the model.
-3. The predictions of the model are post-processed, so you can make sense of them.
+1. הטקסט עובר preprocessing לפורמט שהמודל יכול להבין.
+2. הקלט שעבר preprocessing מועבר למודל.
+3. הפרדיקציות של המודל עוברות post-processing כך שנוכל להבין אותן.
 
 
-Some of the currently [available pipelines](https://huggingface.co/transformers/main_classes/pipelines.html) are:
+חלק מה[מודלים הזמינים](https://huggingface.co/transformers/main_classes/pipelines.html) הם:
 
 - `feature-extraction` (get the vector representation of a text)
 - `fill-mask`
